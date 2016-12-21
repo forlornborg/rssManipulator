@@ -21,7 +21,7 @@ int main(int argc, char **argv){
         char *description  = userInput("enter description");
         RSSFeed *masterFeed = initFeed(xmlVersion, encoding, rssVersion, title, link, description);
     }else{
-        //you've got a working xml. You're goodzo
+        FILE *feedFile = fopen(argv[1], "w");
     }
     while(scanf("%s",command) > 0){
         if(strcmp(command, "i") == 0){
@@ -33,5 +33,6 @@ int main(int argc, char **argv){
             RSSItem *item = initItem(title, link, guid, pubDate, description);
         }
     }
+    
     return 0;
 }

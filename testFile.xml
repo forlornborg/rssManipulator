@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>testXML</title>
+<link>http://forlornstore.com</link>
+<description>testing</description>
+<item>
+<title> newTitle </title>
+<link> followThis </link>
+<guid> https://engadget.com </guid>
+<pubDate> Sat, 0 Jan 2010 15:45:88 GMT </pubDate>
+<description>[CDATA[ This description. ]]</description>
+</item>
+</channel>
+</rss>
